@@ -1,27 +1,29 @@
 .container {
-    background:#153471;
+    background: #153471;
     background-image: url("../images/bg.png");
     background-position: center center;
     background-size: cover;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.form-container  {
+.form-container {
     width: 90%;
-    height: 90%;
+    min-height: 90vh;
     background: linear-gradient(#08164E, #082F65);
     display: flex;
     border-radius: 13px;
+    justify-content: space-between;
 }
 
-.form-container  > div {
+.form-container>div {
     width: 50%;
     display: flex;
     justify-content: center;
+    /* align-content: ; */
 }
 
 .form-container_left {
@@ -48,23 +50,24 @@
     /* border: 1px solid red; */
 }
 
-.form-title:before, .form-title:after {
+.form-title:before,
+.form-title:after {
     content: '';
-    width: 10%;
+    width: 8%;
     height: 3px;
     background-color: #5E96FF;
     margin: 0 20px;
     border-radius: 10px;
 }
 
-.form  {
+.form {
     width: 100%;
     height: 100%;
-    padding: 0 5%;
+    padding: 0 8%;
     padding-bottom: 15px;
 }
 
-.form > form {
+.form>form {
     width: 100%;
     height: 100%;
     display: grid;
@@ -73,48 +76,48 @@
     column-gap: 1rem;
 }
 
-form > .form-fill{
+form>.form-fill {
     grid-column-start: 1;
     grid-column-end: -1;
 }
 
-form > .form-col-2-left{
+form>.form-col-2-left {
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
-form > .form-col-2-right{
+form>.form-col-2-right {
     grid-column-start: 3;
     grid-column-end: 5;
 }
 
-form > .form-col-left{
+form>.form-col-left {
     grid-column-start: 1;
     grid-column-end: 2;
 }
 
-form > .form-col-mid-left{
+form>.form-col-mid-left {
     grid-column-start: 2;
     grid-column-end: 3;
 }
 
-form > .form-col-mid-right{
+form>.form-col-mid-right {
     grid-column-start: 3;
     grid-column-end: 4;
 }
 
-form > .form-col-right{
+form>.form-col-right {
     grid-column-start: 4;
     grid-column-end: 5;
 }
 
-.input-cont{
+.input-cont {
     display: flex;
     flex-direction: column;
     margin: .5rem 0;
 }
 
-.input-cont label{
+.input-cont label {
     font-size: 1.5rem;
     padding: .1em;
     padding-left: .5em;
@@ -123,30 +126,33 @@ form > .form-col-right{
     word-break: keep-all;
 }
 
-input, select {
+input,
+select {
     outline: none;
     border: none;
     font-weight: 600;
     border-radius: 4px;
 }
 
-.input-cont > * {
+.input-cont>* {
     width: 100%;
 }
 
-.input-cont > label {
+.input-cont>label {
     font-weight: 700;
 }
 
-.input-cont > input, .input-cont > select {
+.input-cont>input,
+.input-cont>select {
     font-weight: 500;
 }
 
-.input-cont > input[type=submit] {
+.input-cont>input[type=submit] {
     font-weight: 700;
 }
 
-.input-cont input, .input-cont select{
+.input-cont input,
+.input-cont select {
     padding: .4em .4em;
     background-color: #374e7a;
     font-size: 1.5em;
@@ -154,10 +160,9 @@ input, select {
 }
 
 input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button
-{
-  -webkit-appearance: none;
-  margin: 0;
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .input-cont input[type=date]::-webkit-calendar-picker-indicator {
@@ -170,6 +175,7 @@ input[type=number]::-webkit-outer-spin-button
     background-color: #5e96ff;
 }
 
-.input-cont input[type=submit]:hover, .input-cont select:hover{
+.input-cont input[type=submit]:hover,
+.input-cont select:hover {
     cursor: pointer;
 }
