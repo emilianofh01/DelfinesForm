@@ -18,10 +18,79 @@
                     <p>Registro</p>
                 </div>
                 <div class="form">
-                    <div>
+                    <form>
                         <!-- Aqui comienza la grid we -->
-
-                    </div>
+                        <div class="input-cont form-col-2-left">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre">
+                        </div>
+                        <div class="input-cont form-col-2-right">
+                            <label for="lugarNacimiento">Lugar de nacimiento</label>
+                            <input type="text" name="lugar_nacimiento" id="lugarNacimiento">
+                        </div>
+                        <div class="input-cont form-col-2-left">
+                            <label for="fechaNacimiento">Fecha de nacimiento</label>
+                            <input type="date" name="fecha_nacimiento" id="fechaNacimiento" max="2010-12-31">
+                        </div>
+                        <div class="input-cont form-col-mid-right">
+                            <label for="peso">Peso</label>
+                            <input type="number" name="peso" id="peso" min="30">
+                        </div>
+                        <div class="input-cont form-col-right">
+                            <label for="estatura">Estatura</label>
+                            <input type="number" name="estatura" id="estatura" min="100">
+                        </div>
+                        <div class="input-cont form-col-2-left">
+                            <label for="nacionalidad">Nacionalidad</label>
+                            <select name="nacionalidad" id="nacionalidad">
+                                <option value="EXTRANJERO">EXTRANJERO</option>
+                                <option value="NACIONAL">NACIONAL</option>
+                            </select>
+                        </div>
+                        <div class="input-cont form-fill" style="height:2rem">
+                        </div>
+                        <div class="input-cont form-col-2-left">
+                            <label for="categoria">Categoria</label>
+                            <select name="categoria" id="categoria">
+                                <option value="CATCHERS">CATCHERS</option>
+                                <option value="INFELDERS">INFELDERS</option>
+                                <option value="OUTFIELDERS">OUTFIELDERS</option>
+                                <option value="PITCHERS">PITCHERS</option>
+                            </select>
+                        </div>
+                        <div class="input-cont form-col-2-right">
+                            <label for="posLanzamineto">Categoria</label>
+                            <select name="pos_lanzamineto" id="posLanzamineto">
+                                <option value="CENTER FIELDER">CENTER FIELDER</option>
+                                <option value="RIGHT FIELDER">RIGHT FIELDER</option>
+                                <option value="SECOND BASEMAN">SECOND BASEMAN</option>
+                                <option value="SHORT STOP">SHORT STOP</option> 
+                                <option value="LEFT FIELDER">LEFT FIELDER</option>
+                                <option value="THIRD BASEMAN">THIRD BASEMAN</option>
+                                <option value="PITCHER">PITCHER</option>
+                                <option value="FIRST BASEMAN">FIRST BASEMAN</option>
+                                <option value="CATCHER">CATCHER</option>
+                            </select>
+                        </div>
+                        <div class="input-cont form-col-left">
+                            <label for="lb">L/B</label>
+                            <select name="lb" id="lb">
+                                <option value="D/D">D/D</option>
+                                <option value="D/A">D/A</option>
+                                <option value="D/Z">D/Z</option>
+                                <option value="Z/Z">Z/Z</option>
+                            </select>
+                        </div>
+                        <div class="input-cont form-col-mid-left">
+                            <label for="noJugador">No. jugador</label>
+                            <input type="number" name="no_jugador" id="noJugador" min="1">
+                        </div>
+                        <div class="input-cont form-col-right">
+                        </div>
+                        <div class="input-cont form-col-right">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
                 </div>
             </div>
 

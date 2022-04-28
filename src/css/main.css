@@ -28,4 +28,6 @@ html,
 body {
     font-size: 10px;
     font-family: 'Mulish';
+    --text-color-onlight: #0d0d0d;
+    --text-color-ondark: #fff;
 }
