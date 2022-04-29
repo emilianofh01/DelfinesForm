@@ -43,6 +43,7 @@
     height: 15%;
     width: 100%;
     display: flex;
+    font-weight: 700;
     align-items: center;
     justify-content: center;
     color: white;
