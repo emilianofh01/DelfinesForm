@@ -6,6 +6,14 @@
     }
 
     .form-container_left {
+        background-image: url(../images/logo.png);
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* padding: 20px; */
+    }
+
+    .form-container_left {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
     }
@@ -22,6 +30,12 @@
 }
 
 @media (max-width: 768px) {
+    .form-container_left {
+        background-image: var(--bg);
+        background-size: cover;
+        background-repeat: unset;
+        background-position: unset;
+    }
     .form-container {
         flex-direction: column;
         max-width: 640px;
