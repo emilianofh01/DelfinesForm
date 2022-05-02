@@ -12,7 +12,7 @@
 
 .form-container {
     width: 90%;
-    min-height: 90vh;
+    min-height: 85vh;
     background: linear-gradient(#08164E, #082F65);
     display: flex;
     border-radius: 13px;

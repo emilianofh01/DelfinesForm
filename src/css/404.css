@@ -1,0 +1,112 @@
+/* Expletus Sans latin-ext */
+@font-face {
+    font-family: 'Expletus Sans';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/ExpletusSans-latin-ext-boldItalic.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Expletus Sans latin */
+@font-face {
+    font-family: 'Expletus Sans';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/ExpletusSans-latin-boldItalic.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Montserrat latin-ext */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Montserrat-latin-ext-regular.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Montserrat latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Montserrat-latin-regular.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.container {
+    background: var(--bg-color-dom);
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-container {
+    height: 37vh;
+    /*Estoy con duda de medidas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.error-container p {
+    font-size: 2.5vmax;
+    font-family: 'Montserrat';
+    color: white;
+    opacity: .8;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.error-container p::after {
+    margin-left: 40px;
+}
+
+.error-container p::before {
+    margin-right: 40px;
+}
+
+.error-container p::after,
+.error-container p::before {
+    content: '';
+    width: 10%;
+    height: 5px;
+    background-color: #5E96FF;
+    border-radius: 100px;
+}
+
+.error_logo-container {
+    /* width: 34%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error_logo-container::after,
+.error_logo-container::before {
+    aspect-ratio: 1/1;
+    content: "4";
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 13vmax;
+    width: 10vmax;
+    font-family: 'Expletus Sans';
+    opacity: .8;
+    justify-content: center;
+}
+
+.error-container img {
+    aspect-ratio: 1/1;
+    width: 13vmax;
+}

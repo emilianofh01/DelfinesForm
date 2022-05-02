@@ -70,6 +70,7 @@
 html,
 body {
     font-size: 10px;
+    --bg-color-dom: linear-gradient(#153471, #25619B);
     --text-color-onlight: #0d0d0d;
     --text-color-ondark: #fff;
 }
